@@ -67,10 +67,11 @@ export class TasklistComponent {
   {
     console.log("id",index)
     console.log("obj",taskObj)
-    const endPoint = "task/"+( index +1);
+    const endPoint = "task/"+( index );
     this.http.deleteData(endPoint).subscribe(
     (el:any)=>{
-      this.taskList.splice(index,1);
+      
+      this.taskList.splice(this.taskList.id,1);
       this.dataSource=new MatTableDataSource(this.taskList);
       this.dataSource.sort=this.sort;
       this.dataSource.paginator=this.paginator

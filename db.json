@@ -15,5 +15,27 @@
       "id": 2
     }
   ],
-  "task": []
+  "task": [
+    {
+      "id": 1,
+      "task": "script-4",
+      "priority": "medium",
+      "Duedate": "11/12/23",
+      "Completionstatus": "complite"
+    },
+    {
+      "id": 2,
+      "task": "script-3",
+      "priority": "medium",
+      "Duedate": "11/12/23",
+      "Completionstatus": "complite"
+    },
+    {
+      "id": 3,
+      "task": "script-3",
+      "priority": "medium",
+      "Duedate": "11/12/23",
+      "Completionstatus": "underprocess"
+    }
+  ]
 }
