@@ -1,0 +1,28 @@
+<p>sign-up works!</p>
+<div class="container w-50 mt-5 border shadow p-5">
+    <h3>Sign Up</h3>
+    <form [formGroup]="signUpForm" (ngSubmit)="signUp()">
+       <div class="mb-3">
+         <label for="id1" class="form-label">Name</label>
+         <input type="text" class="form-control" id="id1" aria-describedby="emailHelp" formControlName="name">
+       </div>
+       <div class="mb-3">
+        <label for="id2" class="form-label">Mobile No</label>
+        <input type="text" class="form-control" id="id2" aria-describedby="emailHelp" formControlName="mobileNo">
+      </div>
+      <div class="mb-3">
+        <label for="id3" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="id3" aria-describedby="emailHelp" formControlName="email">
+      </div>
+       <div class="mb-3">
+         <label for="exampleInputPassword1" class="form-label">Password</label>
+         <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password">
+       </div>
+       <div class="mb-3 form-check">
+         <input type="checkbox" class="form-check-input" id="exampleCheck1">
+         <label class="form-check-label" for="exampleCheck1">Check me out</label>
+       </div>
+       <button type="submit" class="btn btn-primary">Sign Up</button> <br>
+       <button type="button" class="btn btn-primary mt-2" routerLink="/login">Login</button>
+     </form>
+</div>

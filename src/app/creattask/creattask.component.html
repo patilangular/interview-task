@@ -1,0 +1,26 @@
+<p>creattask works!</p>
+<div class="container w-50 mt-5 border shadow p-5">
+    <h3>Creat Task</h3>
+    <form [formGroup]="taskForm" (ngSubmit)="save()">
+       <div class="mb-3">
+         <label for="id1" class="form-label">task</label>
+         <input type="text" class="form-control" id="id1" formControlName="task">
+       </div>
+       <div class="mb-3">
+        <label for="id2" class="form-label">priority</label>
+        <input type="text" class="form-control" id="id2" formControlName="priority">
+      </div>
+      <div class="mb-3">
+        <label for="id3" class="form-label">Duedate</label>
+        <input type="text" class="form-control" id="id3" formControlName="Duedate">
+      </div>
+       <div class="mb-3">
+         <label for="exampleInputPassword1" class="form-label">Completion status</label>
+         <input type="text" class="form-control" id="exampleInputPassword1" formControlName="Completionstatus">
+       </div>
+      
+       <button type="submit" class="btn btn-primary">Save</button>
+       <button type="button" class="btn btn-primary ms-3" routerLink="/task-list">Back</button> <br>
+
+     </form>
+</div>
